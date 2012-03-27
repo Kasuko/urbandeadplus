@@ -1,0 +1,16 @@
+{
+	"name": "Urban Dead Plus",
+	"version": "0.2.0",
+	"description": "Tidies up the Urban Dead UI.",
+	"icons": {
+		"16": "icon16.png",
+		"48": "icon48.png",
+		"128": "icon128.png"
+	},
+	"content_scripts": [{
+		"matches": ["http://urbandead.com/*", "http://www.urbandead.com/*"],
+		"css": ["content_style.css"],
+		"js": ["jquery-1.7.2.min.js", "content_script.js"],
+		"run_at": "document_end"
+	}]
+}

@@ -1,0 +1,10 @@
+/*!
+ * Urban Dead Plus v0.2.0
+ * Copyright 2011, Calvin Davis
+ */
+#player-info ul { list-style:inside none; margin:0; padding:0; }
+#player-info .bar-outer { background:black; display:inline-block; height:12px; width:150px; }
+#player-info .bar-outer .bar { background:#fff; float:left; height:12px; }
+#player-info .bar-outer .good { background:#3f3; }
+#player-info .bar-outer .ok { background:#ff3; }
+#player-info .bar-outer .bad { background:#f33; }
