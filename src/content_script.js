@@ -32,10 +32,16 @@ var playerInfo = '<div id="player-info">' +
 		'<div id="hp-bar-outer" class="bar-outer" title="' + player.hp + ' / 60">' +
 		'<div id="hp-bar" class="bar ' + player.hpStatus + '" style="width:' + player.hpPercent + '%;"></div>' +
 		'</div>' +
+		'<b>' + player.hp + '</b>' +
 		'</li>' +	
 		'<li><strong><abbr title="Action Points">AP</abbr>:</strong> ' + 
 		'<div id="ap-bar-outer" class="bar-outer" title="' + player.ap + ' / 50">' +
 		'<div id="ap-bar" class="bar ' + player.apStatus + '" style="width:' + player.apPercent + '%;"></div>' +
+		'</div>' +
+		(player.ap < 10 ? '<span class="apw">' : '') +
+		'<b>' + player.ap + '</b>' +
+		(player.ap < 10 ? '</span>' : '') +
+		'</li>' +
 		'<li><strong><abbr title="EXperience Points">XP</abbr>:</strong> ' + player.xp + '</li>' +	
 		'</div>' +
 		'</li>' +

@@ -1,5 +1,6 @@
 {
 	"name": "Urban Dead Plus",
+	"manifest_version": 2,
 	"version": "0.2.0",
 	"description": "Tidies up the Urban Dead UI.",
 	"icons": {
