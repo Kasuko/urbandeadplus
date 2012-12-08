@@ -66,3 +66,13 @@ $('[action*="map.cgi?use"]').each(function() {
 	}
 	inventory[name].countSpan.text(inventory[name].count > 1 ? inventory[name].count + ' x ' : '');
 });
+
+// Add link to DSS Map
+player.x = $('input[name="homex"]').attr("value");
+player.y = $('input[name="homey"]').attr("value");
+
+var rawLocation = $('.gp .gt b');
+var locationName = rawLocation.slice(0, 1).text();
+var locationInfo = '<a href="http://map.dssrzs.org/location/' + player.x + '-' + player.y + '" target="_blank">' +
+	locationName + ' (' + player.x + ', ' + player.y + ')' + '</a>';
+rawLocation.empty().html(locationInfo);
